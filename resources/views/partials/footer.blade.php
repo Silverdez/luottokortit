@@ -5,8 +5,8 @@
     </a>
 
     @if (has_nav_menu('footer_navigation'))
-      <nav class="nav-primary flex" aria-label="{{ wp_get_nav_menu_name('footer_navigation') }}">
-        {!! wp_nav_menu(['theme_location' => 'footer_navigation', 'menu_class' => 'nav', 'echo' => false]) !!}
+      <nav class="nav-primary flex flex-col noListImage" aria-label="{{ wp_get_nav_menu_name('footer_navigation') }}">
+        {!! wp_nav_menu(['theme_location' => 'footer_navigation', 'menu_class' => 'nav-footer mb-0', 'echo' => false]) !!}
       </nav>
     @endif
   </div>

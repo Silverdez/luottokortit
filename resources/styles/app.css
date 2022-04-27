@@ -98,3 +98,12 @@ ol li::before {
 ul li::marker {
   @apply rounded-full w-6 h-6 bg-accent text-base mr-4;
 }
+
+
+/* Footer */
+.nav-footer {
+
+}
+.nav-footer li{
+  @apply text-0.7 text-primary py-1 px-3 rounded-md hover:bg-tertiary transition
+}

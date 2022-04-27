@@ -14,46 +14,50 @@ class Card extends Field
      */
     public function fields()
     {
-        $cardPayments = new FieldsBuilder('payment_infos');
+        $cardPayments = new FieldsBuilder('card_infos');
 
         $cardPayments
             ->setLocation('post_type', '==', 'payment');
 
         $cardPayments
             ->addTab('general_tab', [
-                'label' => 'Payment Global Infos'
+                'label' => 'Card Global Infos'
             ])
-            ->addNumber('payment_rating', [
+            ->addNumber('card_rating', [
                 'instructions' => '',
                 'required' => 0,
                 'min' => '0',
                 'max' => '5',
                 'step' => '0.5',
+                'append' => '/5',
             ])
-            ->addUrl('payment_url', [
+            ->addUrl('card_url', [
                 'default_value' => '',
                 'placeholder' => '',
             ])
-            ->addNumber('payment_maximum_credit', [
+            ->addNumber('card_maximum_credit', [
                 'instructions' => '',
                 'required' => 1,
+                'prepend' => '€',
             ])
-            ->addNumber('payment_annual_fee', [
+            ->addNumber('card_annual_fee', [
                 'instructions' => '',
                 'required' => 1,
+                'append' => '€',
             ])
-            ->addNumber('payment_nominal_interest_rate', [
+            ->addNumber('card_nominal_interest_rate', [
                 'instructions' => '',
                 'required' => 1,
                 'min' => '0',
                 'max' => '100',
+                'append' => '%',
             ]);
 
         $cardPayments
             ->addTab('sub_infos_pro_tab',[
-                'label' => "Payment Sub Infos Pro Sides"
+                'label' => "Card Pro Sides"
             ])
-            ->addRepeater('payment_pro_sides',[
+            ->addRepeater('card_pro_sides',[
                 'label' => 'List of Pro Sides',
                 'button_label' => 'Add a pro side',
                 'min' => 1,
@@ -65,9 +69,9 @@ class Card extends Field
 
         $cardPayments
             ->addTab('sub_infos_cons_tab',[
-                'label' => "Payment Sub Infos Cons Sides"
+                'label' => "Card Cons Sides"
             ])
-            ->addRepeater('payment_cons_sides',[
+            ->addRepeater('card_cons_sides',[
                 'label' => 'List of Cons Sides',
                 'button_label' => 'Add a cons side',
             ])
@@ -78,9 +82,9 @@ class Card extends Field
 
         $cardPayments
             ->addTab('sub_infos_additional_tab',[
-                'label' => "Payment Sub Additional Infos"
+                'label' => "Card Additional Infos"
             ])
-            ->addRepeater('payment_additional_info',[
+            ->addRepeater('card_additional_info',[
                 'label' => 'List of Additional Information',
                 'button_label' => 'Add an additional info',
                 'min' => 1,
@@ -95,14 +99,14 @@ class Card extends Field
 
         $cardPayments
             ->addTab('sub_infos_standard_tab',[
-                'label' => "Payment Sub Infos Standard"
+                'label' => "Card Standard Infos"
             ])
-            ->addRepeater('payment_standard_info',[
+            ->addRepeater('card_standard_info',[
                 'label' => 'List of Standard Information',
                 'button_label' => 'Add a standard info',
                 'min' => 1,
             ])
-            ->addText('good_side_name',[
+            ->addText('standard_info_name',[
                 'label' => 'Standard Info Name',
             ])
             ->endRepeater();

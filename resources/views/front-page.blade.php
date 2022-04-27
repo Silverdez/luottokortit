@@ -29,17 +29,17 @@
       @if($featured_cards)
       <section class="cards__payments">
         <div class="container">
-          <h2 class="title">Here</h2>
+{{--          <h2 class="title">Here</h2>--}}
           <ul class="w-full mb-8 noListImage">
             @foreach($featured_cards as $key => $card)
               @include('partials.content-card', [$card])
             @endforeach
           </ul>
-          <div class="w-full text-center my-8">
-            <button class="">
-              <a class="inline-block bg-accent px-12 py-2 rounded-md" href="<?php echo site_url('/blog'); ?>">View all blog posts</a>
-            </button>
-          </div>
+{{--          <div class="w-full text-center my-8">--}}
+{{--            <button class="">--}}
+{{--              <a class="inline-block bg-accent px-12 py-2 rounded-md" href="<?php echo site_url('/blog'); ?>">View all blog posts</a>--}}
+{{--            </button>--}}
+{{--          </div>--}}
 
         </div>
       </section>
