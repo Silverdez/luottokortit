@@ -1,9 +1,8 @@
 @extends('layouts.app')
 
 @php
-  $paged = get_query_var('paged') ? get_query_var('paged') : 1;
-  //$fields = get_fields(get_queried_object_id());
-  $featured_cards = get_field('ranking_card_payment');
+  $paged            = get_query_var('paged') ? get_query_var('paged') : 1;
+  $fields           = get_fields(get_queried_object_id());
 
   $argsPaymentsCards=[
       'post_type' => 'payment',
@@ -26,12 +25,12 @@
   @include('partials.hero')
   <section class="section__payment-cards">
     <div class="container mx-auto">
-      @if($featured_cards)
+      @if($fields['ranking_card_payment'])
       <section class="cards__payments">
         <div class="container">
 {{--          <h2 class="title">Here</h2>--}}
           <ul class="w-full mb-8 noListImage">
-            @foreach($featured_cards as $key => $card)
+            @foreach($fields['ranking_card_payment'] as $card)
               @include('partials.content-card', [$card])
             @endforeach
           </ul>
@@ -47,6 +46,7 @@
     </div>
   </section>
   <section class="section__content">
+
     <div class="container mx-auto">
       @while(have_posts()) @php(the_post())
       {{ the_content() }}

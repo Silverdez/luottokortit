@@ -31,8 +31,7 @@ class Card extends Field
                 'step' => '0.5',
                 'append' => '/5',
             ])
-            ->addUrl('card_url', [
-                'default_value' => '',
+            ->addLink('card_url', [
                 'placeholder' => '',
             ])
             ->addNumber('card_maximum_credit', [
@@ -60,7 +59,6 @@ class Card extends Field
             ->addRepeater('card_pro_sides',[
                 'label' => 'List of Pro Sides',
                 'button_label' => 'Add a pro side',
-                'min' => 1,
             ])
             ->addText('pro_side_name',[
                 'label' => 'Pro Sides Name',

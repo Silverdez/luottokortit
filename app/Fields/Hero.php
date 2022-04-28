@@ -24,7 +24,7 @@ class Hero extends Field
                 'label' => 'Général'
             ])
             ->addText('title', [
-                'label' => 'Main Hero Title',
+                'label' => 'Hero Title',
                 'instructions' => 'H1 Title of the hero',
                 'required' => 1,
             ])
@@ -32,6 +32,9 @@ class Hero extends Field
                 'label' => 'Hero Description',
                 'instructions' => 'Description inside the hero section',
                 'required' => 0,
+            ])
+            ->addLink('hero_link_url',[
+                'label' => 'Hero Link Url'
             ])
             ->addImage('hero_image', [
                 'label' => 'Hero Image',

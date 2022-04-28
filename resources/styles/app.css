@@ -9,7 +9,7 @@
 }
 
 body {
-  @apply font-display text-gray-800 bg-globalBg
+  @apply font-display text-textGlobal bg-globalBg
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -39,12 +39,16 @@ p{
   @apply mb-4
 }
 
+.icon path{
+  @apply text-primary
+}
+
 h1:after,
 h2:after,
 h3:after,
 h4:after{
   content: '';
-  @apply block h-full w-1 rounded-full bg-accent absolute -left-4 top-0
+  @apply block h-full w-1 rounded-full bg-titleMark absolute -left-4 top-0
 }
 
 h1.noDecoration:after,
@@ -78,7 +82,7 @@ ul {
 
 ul li::before {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  @apply text-accent font-black inline-block w-1 -ml-1 mr-4
+  @apply text-textAccent font-black inline-block w-1 -ml-1 mr-4
 }
 
 .noListImage ul li::before,
@@ -92,7 +96,7 @@ ol li {
 }
 ol li::before {
   content: counter(my-awesome-counter) ;
-  @apply inline-flex items-center justify-center w-5 h-5 bg-accent rounded-full p-1 font-medium text-center mr-3 text-0.7
+  @apply inline-flex items-center justify-center w-5 h-5 bg-textAccent text-white rounded-full p-1 font-medium text-center mr-3 text-0.7
 }
 
 ul li::marker {
@@ -100,10 +104,27 @@ ul li::marker {
 }
 
 
+/* Header */
+.nav-header {
+  @apply h-full
+
+}
+.nav-header li{
+  @apply relative text-0.9 text-headerText px-4 h-full hover:text-headerAccent hover:bg-headerAccent hover:bg-opacity-5 transition flex items-center cursor-pointer
+}
+
+.nav-header li:after {
+  content: '';
+  @apply block w-full h-0 bg-titleMark absolute left-0 top-0 transition transform -translate-y-full
+}
+.nav-header li:hover:after {
+  @apply h-1 translate-y-0
+}
+
 /* Footer */
 .nav-footer {
 
 }
 .nav-footer li{
-  @apply text-0.7 text-primary py-1 px-3 rounded-md hover:bg-tertiary transition
+  @apply text-0.7 text-footerText py-1 px-3 rounded-md hover:text-footerLink transition
 }

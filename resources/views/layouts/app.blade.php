@@ -3,7 +3,7 @@
   @include('partials.header')
 @show
 
-<main class="main" data-scroll-content>
+<main class="main px-6" data-scroll-content>
   <div class="content" data-barba="container">
     @yield('content')
   </div>
@@ -14,8 +14,8 @@
     </aside>
     @endif --}}
 
-  @section('footer')
-    @include('partials.footer')
-  @show
-
 </main>
+
+@section('footer')
+  @include('partials.footer')
+@show
