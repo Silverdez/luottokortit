@@ -1928,18 +1928,40 @@
     "@roots/container" "5.7.7"
     tslib "^2.3.1"
 
+"@roots/bud-framework@5.8.1":
+  version "5.8.1"
+  resolved "https://registry.yarnpkg.com/@roots/bud-framework/-/bud-framework-5.8.1.tgz#ad1f52b398df362d8a00ada49dfea64631567c63"
+  integrity sha512-IfeHqCoLWo5ljF5mlXX1NwXv74FcvtNRba09PTBr/mlRYIGdf3ocR9VliDj894egAoYD54GRT1o7T6uao4GTnQ==
+  dependencies:
+    "@roots/bud-support" "5.8.1"
+    "@roots/container" "5.8.1"
+    tslib "2.3.1"
+
 "@roots/bud-hooks@5.7.7":
   version "5.7.7"
   resolved "https://registry.npmjs.org/@roots/bud-hooks/-/bud-hooks-5.7.7.tgz#ff5c6d38ee5a6c970fcc0f2f1fc8e3eed5d04fe4"
   integrity sha512-4tCiPHWlldTrfXeM9DislBw/Xt15o6V6dclku+21GvhyBAQ29ugzBLrDcrNcP1lWmNcqYSMlKJTxb9JR/qX+Pw==
 
-"@roots/bud-postcss@5.7.7", "@roots/bud-postcss@^5.7.7":
+"@roots/bud-postcss@5.7.7":
   version "5.7.7"
   resolved "https://registry.yarnpkg.com/@roots/bud-postcss/-/bud-postcss-5.7.7.tgz#9cb7259a7d49dbc98877f6ed1b49923123da2a82"
   integrity sha512-BPcoU7rGdzcrsGUycb4vuCBZM6WP6uTfSxw3EXwEIJNKbydLvaQ0U2bzpb9rm8KwcRPg4qOyznV+81ISSDMOOA==
   dependencies:
     "@roots/bud-build" "5.7.7"
     postcss "8.4.12"
+    postcss-import "14.0.2"
+    postcss-loader "6.2.1"
+    postcss-nested "5.0.6"
+    postcss-preset-env "7.4.2"
+    tslib "2.3.1"
+
+"@roots/bud-postcss@5.8.1", "@roots/bud-postcss@^5.7.7":
+  version "5.8.1"
+  resolved "https://registry.yarnpkg.com/@roots/bud-postcss/-/bud-postcss-5.8.1.tgz#3119fff2cc55ce35f6d16fdfbf158d006b832de9"
+  integrity sha512-FrKXh+pufn8R6amsP9yhwl1+1I96O1WoHFepEYX0XgsHLG/MtUKsSPMJ3X6yO7ViuItzzt8Sha/LQogXzl1uHA==
+  dependencies:
+    "@roots/bud-framework" "5.8.1"
+    postcss "8.4.13"
     postcss-import "14.0.2"
     postcss-loader "6.2.1"
     postcss-nested "5.0.6"
@@ -1985,15 +2007,15 @@
     react-refresh "^0.11.0"
     tslib "2.3.1"
 
-"@roots/bud-sass@^5.7.7":
-  version "5.7.7"
-  resolved "https://registry.yarnpkg.com/@roots/bud-sass/-/bud-sass-5.7.7.tgz#11d0f267a0f9cd0ef022f741675e0deb7a32274b"
-  integrity sha512-KwGFTmgvfraHmy8HrXofOTiL439DfI23Il0+9AayQIB0uzsLmP0sHS0YZ1NorcIwvMRDG0mpfN7WD4nJb/b0Ug==
+"@roots/bud-sass@^5.8.1":
+  version "5.8.1"
+  resolved "https://registry.yarnpkg.com/@roots/bud-sass/-/bud-sass-5.8.1.tgz#74c647a62932abc1950f28766b3a3b1f35a74931"
+  integrity sha512-xLMYuhqEnzUnhLQ8ROz9KNFS+buc45QiC1ydb9eKEYHW/p2FRDuDZCvHO1zyt8jMGy35EEgYpRfCWN7E6BR3Zg==
   dependencies:
-    "@roots/bud-build" "5.7.7"
-    "@roots/bud-support" "5.7.7"
-    postcss-scss "4.0.3"
-    resolve-cwd "3.0.0"
+    "@roots/bud-framework" "5.8.1"
+    "@roots/bud-postcss" "5.8.1"
+    postcss "8.4.13"
+    postcss-scss "4.0.4"
     sass "1.49.9"
     sass-loader "12.6.0"
     stylelint-config-recommended-scss "5.0.2"
@@ -2022,6 +2044,11 @@
   version "5.7.7"
   resolved "https://registry.npmjs.org/@roots/bud-support/-/bud-support-5.7.7.tgz#9ec8275e41719cd33b83bab2f1e64c64ed88b8e0"
   integrity sha512-5c7KHDYQhlVfuXE/5f/nq8p7s5MNkV+nE7ftdHg9lpsEDXmf9fBmaiANYi5tTvyzno6VnB87S3njYoYFLXwV9Q==
+
+"@roots/bud-support@5.8.1":
+  version "5.8.1"
+  resolved "https://registry.yarnpkg.com/@roots/bud-support/-/bud-support-5.8.1.tgz#0897e5c058b9611d0e1b55afb6f1d9ce7f2b2ca4"
+  integrity sha512-3zKUVOjWXgoxIokZSgZlONQ4p9CfrkGGLCoQdD+CgGPdrSZ9r/eoqPjIvKrjdCYgW39LM2aZZ5/bbkxSDvP4jA==
 
 "@roots/bud-tailwindcss@5.7.7":
   version "5.7.7"
@@ -2097,6 +2124,14 @@
   integrity sha512-ItD1YFkW9pLZRYzY/DDf7L6TnYNzLHE9kz6G7TwUszWdefgebpFG/YKeEobdLzIVkrnIzy8T0bQE4Aj5+eRQmw==
   dependencies:
     tslib "^2.3.1"
+
+"@roots/container@5.8.1":
+  version "5.8.1"
+  resolved "https://registry.yarnpkg.com/@roots/container/-/container-5.8.1.tgz#0461bd20f22f36e11c727822fab43eaa3eb5c19f"
+  integrity sha512-wGw4R3AnlrLVizSO1WKXeCuxzZejFjKvbntIhBmI2ncWSNoXfZDdt54hTTnA12RZDoZx4VaP01OwNI0o5EZdYA==
+  dependencies:
+    helpful-decorators "2.1.0"
+    tslib "2.3.1"
 
 "@roots/dependencies@5.7.7":
   version "5.7.7"
@@ -4989,7 +5024,7 @@ he@^1.1.0, he@^1.2.0:
   resolved "https://registry.npmjs.org/he/-/he-1.2.0.tgz"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
 
-helpful-decorators@^2.1.0:
+helpful-decorators@2.1.0, helpful-decorators@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/helpful-decorators/-/helpful-decorators-2.1.0.tgz"
   integrity sha512-RiJEDqSD5c7zmNbx0EgcOvHMOu793Q5M51Q8lS+EHtBmxVE89s95ScMg0bLmLqMl2mA+JEU6WfXkyGLcdYb0wg==
@@ -6308,20 +6343,15 @@ murmurhash-js@^1.0.0:
   resolved "https://registry.yarnpkg.com/murmurhash-js/-/murmurhash-js-1.0.0.tgz#b06278e21fc6c37fa5313732b0412bcb6ae15f51"
   integrity sha1-sGJ44h/Gw3+lMTcysEEry2rhX1E=
 
-nanoid@^3.1.30:
-  version "3.1.30"
-  resolved "https://registry.npmjs.org/nanoid/-/nanoid-3.1.30.tgz"
-  integrity sha512-zJpuPDwOv8D2zq2WRoMe1HsfZthVewpel9CAvTfc/2mBD1uUT/agc5f7GHGWXlYkFvi1mVxe4IjvP2HNrop7nQ==
-
-nanoid@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.npmjs.org/nanoid/-/nanoid-3.2.0.tgz#62667522da6673971cca916a6d3eff3f415ff80c"
-  integrity sha512-fmsZYa9lpn69Ad5eDn7FMcnnSR+8R34W9qJEijxYhTbfOWzr22n1QxCMzXLK+ODyW2973V3Fux959iQoUxzUIA==
-
 nanoid@^3.3.1:
   version "3.3.1"
   resolved "https://registry.npmjs.org/nanoid/-/nanoid-3.3.1.tgz#6347a18cac88af88f58af0b3594b723d5e99bb35"
   integrity sha512-n6Vs/3KGyxPQd6uO0eH4Bv0ojGSUvuLlIHtC3Y0kEO23YRge8H9x1GCzLn28YX0H66pMkxuaeESFq4tKISKwdw==
+
+nanoid@^3.3.3:
+  version "3.3.4"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.4.tgz#730b67e3cd09e2deacf03c027c81c9d9dbc5e8ab"
+  integrity sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==
 
 natural-compare@^1.4.0:
   version "1.4.0"
@@ -7298,10 +7328,10 @@ postcss-safe-parser@^6.0.0:
   resolved "https://registry.yarnpkg.com/postcss-safe-parser/-/postcss-safe-parser-6.0.0.tgz#bb4c29894171a94bc5c996b9a30317ef402adaa1"
   integrity sha512-FARHN8pwH+WiS2OPCxJI8FuRJpTVnn6ZNFiqAM2aeW2LwTHWWmWgIyKC6cUo0L8aeKiF/14MNvnpls6R2PBeMQ==
 
-postcss-scss@4.0.3, postcss-scss@^4.0.2:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/postcss-scss/-/postcss-scss-4.0.3.tgz#36c23c19a804274e722e83a54d20b838ab4767ac"
-  integrity sha512-j4KxzWovfdHsyxwl1BxkUal/O4uirvHgdzMKS1aWJBAV0qh2qj5qAZqpeBfVUYGWv+4iK9Az7SPyZ4fyNju1uA==
+postcss-scss@4.0.4, postcss-scss@^4.0.2:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/postcss-scss/-/postcss-scss-4.0.4.tgz#aa8f60e19ee18259bc193db9e4b96edfce3f3b1f"
+  integrity sha512-aBBbVyzA8b3hUL0MGrpydxxXKXFZc5Eqva0Q3V9qsBOLEMsjb6w49WfpsoWzpEgcqJGW4t7Rio8WXVU9Gd8vWg==
 
 postcss-selector-not@^5.0.0:
   version "5.0.0"
@@ -7355,7 +7385,7 @@ postcss-value-parser@^4.0.0, postcss-value-parser@^4.0.2, postcss-value-parser@^
   resolved "https://registry.npmjs.org/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz"
   integrity sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==
 
-postcss@8.4.12, postcss@^8.4.12:
+postcss@8.4.12:
   version "8.4.12"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.12.tgz#1e7de78733b28970fa4743f7da6f3763648b1905"
   integrity sha512-lg6eITwYe9v6Hr5CncVbK70SoioNQIq81nsaG86ev5hAidQvmOeETBqs7jm43K2F5/Ley3ytDtriImV6TpNiSg==
@@ -7364,23 +7394,14 @@ postcss@8.4.12, postcss@^8.4.12:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-postcss@^8.2.14, postcss@^8.4.6:
-  version "8.4.6"
-  resolved "https://registry.npmjs.org/postcss/-/postcss-8.4.6.tgz#c5ff3c3c457a23864f32cb45ac9b741498a09ae1"
-  integrity sha512-OovjwIzs9Te46vlEx7+uXB0PLijpwjXGKXjVGGPIGubGpq7uh5Xgf6D6FiJ/SzJMBosHDp6a2hiXOS97iBXcaA==
+postcss@8.4.13, postcss@^8.2.14, postcss@^8.2.15, postcss@^8.3.5, postcss@^8.4.12, postcss@^8.4.6:
+  version "8.4.13"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.13.tgz#7c87bc268e79f7f86524235821dfdf9f73e5d575"
+  integrity sha512-jtL6eTBrza5MPzy8oJLFuUscHDXTV5KcLlqAWHl5q5WYRfnNRGSmOZmOZ1T6Gy7A99mOZfqungmZMpMmCVJ8ZA==
   dependencies:
-    nanoid "^3.2.0"
+    nanoid "^3.3.3"
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
-
-postcss@^8.2.15, postcss@^8.3.5:
-  version "8.4.5"
-  resolved "https://registry.npmjs.org/postcss/-/postcss-8.4.5.tgz"
-  integrity sha512-jBDboWM8qpaqwkMwItqTQTiFikhs/67OYVvblFFTM7MrZjt6yMKd6r2kgXizEbTTljacm4NldIlZnhbjr84QYg==
-  dependencies:
-    nanoid "^3.1.30"
-    picocolors "^1.0.0"
-    source-map-js "^1.0.1"
 
 postprocessing@^6.26.3:
   version "6.26.3"
@@ -7837,7 +7858,7 @@ requires-port@^1.0.0:
   resolved "https://registry.npmjs.org/requires-port/-/requires-port-1.0.0.tgz"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
 
-resolve-cwd@3.0.0, resolve-cwd@^3.0.0:
+resolve-cwd@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/resolve-cwd/-/resolve-cwd-3.0.0.tgz"
   integrity sha512-OrZaX2Mb+rJCpH/6CpSqt9xFVpN++x01XnN2ie9g6P5/3xelLAkXWVADpdz1IHD/KFfEXyE6V0U01OQ3UO2rEg==
@@ -8302,11 +8323,6 @@ source-list-map@^2.0.1:
   version "1.0.2"
   resolved "https://registry.npmjs.org/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"
   integrity sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==
-
-source-map-js@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/source-map-js/-/source-map-js-1.0.1.tgz"
-  integrity sha512-4+TN2b3tqOCd/kaGRJ/sTYA0tR0mdXx26ipdolxcwtJVqEnqNYvlCAt1q3ypy4QMlYus+Zh34RNtYLoq2oQ4IA==
 
 source-map-support@~0.5.20:
   version "0.5.21"
