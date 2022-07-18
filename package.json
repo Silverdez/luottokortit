@@ -22,7 +22,7 @@
     "@roots/bud-babel": "^5.7.7",
     "@roots/bud-postcss": "^5.7.7",
     "@roots/bud-react": "^5.7.7",
-    "@roots/bud-sass": "^5.7.7",
+    "@roots/bud-sass": "^6.3.2",
     "@roots/bud-tailwindcss": "5.7.7",
     "@roots/sage": "5.7.7",
     "@wordpress/babel-preset-default": "^6.7.0",
