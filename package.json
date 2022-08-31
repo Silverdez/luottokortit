@@ -65,7 +65,7 @@
     "object-fit-images": "^3.2.4",
     "polished": "^4.2.2",
     "popper.js": "^1.16.1",
-    "postprocessing": "^6.26.3",
+    "postprocessing": "^6.28.6",
     "scroll-restoration-polyfill": "^0.6.1",
     "susy": "^3.0.7",
     "three": "^0.139.2",
