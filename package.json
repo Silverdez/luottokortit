@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@roots/bud": "5.7.7",
-    "@roots/bud-babel": "^5.7.7",
+    "@roots/bud-babel": "^6.8.0",
     "@roots/bud-postcss": "^5.7.7",
     "@roots/bud-react": "^5.7.7",
     "@roots/bud-sass": "^5.7.7",
