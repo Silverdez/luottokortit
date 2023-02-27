@@ -7382,10 +7382,10 @@ postcss@^8.2.15, postcss@^8.3.5:
     picocolors "^1.0.0"
     source-map-js "^1.0.1"
 
-postprocessing@^6.26.3:
-  version "6.26.3"
-  resolved "https://registry.yarnpkg.com/postprocessing/-/postprocessing-6.26.3.tgz#456922499e13e02352b3b6b14881ca8186e8a96a"
-  integrity sha512-f9VMDQSLngrdJByPjza4pNHZWoEnGFdxj6GsgqGd2+RM3PYFTCZapgpX9W/FspRUg6Is38vkUfjvLxWyfBHbhQ==
+postprocessing@^6.30.1:
+  version "6.30.1"
+  resolved "https://registry.yarnpkg.com/postprocessing/-/postprocessing-6.30.1.tgz#b1739eb78c26730bb86196f7dc8c759237e660b4"
+  integrity sha512-GkBrQtX6KjNz+Pz3+ABvP1aXKCCW7h/tuE37wlM90WZLbaGfJ7eSIBN2gPgKExuK584IPde0YOoNiuWMr7PNCQ==
 
 prelude-ls@^1.2.1:
   version "1.2.1"
